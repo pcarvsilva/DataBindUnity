@@ -20,7 +20,7 @@ public class DataBinderEditor : PropertyDrawer{
 	{
 		if(_list.count > 0) {
 			FieldInfo field = _field as FieldInfo;
-			Type lastType = (_list.list[_list.list.Count- 1] as BindedData).type;
+			Type lastType = (_list.list[_list.list.Count- 1] as BindedData).field.FieldType;
 			_list.list.Add(new BindedData(lastType,field));
 		}else{
 			FieldInfo field = _field as FieldInfo;
@@ -131,9 +131,15 @@ public class DataBinderEditor : PropertyDrawer{
 		possibleTypes = getAllPossibleTypes();
 		if (binder.type != null)
 			index = possibleTypes.IndexOf(binder.type.ToString());
-		if(index == -1) 
+		if (index == -1) { 
 			index = 0;
+			CleanList ();
+		}
+			
 		int typeIndex = EditorGUI.Popup(new Rect (position.x +35, position.y +2, 90, 20), index, possibleTypes.ToArray());
+		if (typeIndex != index)
+			CleanList ();
+		
 		binder.type = getPossibleTypesValue()[typeIndex];
 
 		EditorGUI.EndProperty();
@@ -160,5 +166,9 @@ public class DataBinderEditor : PropertyDrawer{
 
 		EditorGUI.EndProperty();
 		*/
+	}
+
+	private void CleanList() {
+		_list.list.Clear ();
 	}
 }

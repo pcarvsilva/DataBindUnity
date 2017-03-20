@@ -1,17 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\View\Binding\DataBinder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\View\Binding\BindedData.cs">
     <Files>
-      <File FileName="Assets\Assets\Scripts\View\Binding\Functions\AttributeToText.cs" Line="10" Column="46" />
-      <File FileName="Assets\Assets\Scripts\View\Binding\DataBinder.cs" Line="14" Column="18" />
-      <File FileName="Assets\Assets\Scripts\View\Binding\BindedData.cs" Line="12" Column="18" />
-      <File FileName="Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" Line="28" Column="4" />
+      <File FileName="Assets\Assets\Scripts\View\Binding\Functions\AttributeToText.cs" Line="28" Column="4" />
+      <File FileName="Assets\Assets\Scripts\View\Binding\DataBinder.cs" Line="38" Column="43" />
+      <File FileName="Assets\Assets\Scripts\View\Binding\BindedData.cs" Line="38" Column="35" />
+      <File FileName="Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" Line="27" Column="54" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="D:\Projetos\Unity\DataBindUnity\Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" line="77" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" line="119" offsetX="688" offsetY="1890" expression="binder.inspectedTypes" liveUpdate="False" />

@@ -14,7 +14,6 @@ public class BindedData {
 
 	public Type type {
 		get {
-			Debug.Log ("TYPE: " + _type);
 			return Type.GetType (_type);
 		}
 

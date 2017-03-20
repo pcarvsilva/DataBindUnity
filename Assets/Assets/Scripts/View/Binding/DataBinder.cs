@@ -7,8 +7,7 @@ using System.Reflection;
 
 [Serializable]
 public class DataBinder {
-
-	//private static Dictionary<FieldInfo,List<DataBinder>> binds ; 
+	public BindDataUnityEvent onAttributeChange;
 	public List<BindedData> inspectedTypes;
 
 	[SerializeField]
@@ -28,22 +27,21 @@ public class DataBinder {
 
 	public DataBinder() {
 		inspectedTypes = new List<BindedData> ();
+		onAttributeChange = new BindDataUnityEvent ();
 	}
 
-	/*
-	public static void NotifyField()
-	{
+	public void RetrieveAttributeFrom(GameObject obj) {
+		Component c = obj.GetComponent(type);
+		if (c == null)
+			throw new MissingComponentException(type.ToString());
 
-	}
-
-	public void Bind()
-	{
-		foreach(BindedData data in inspectedTypes)
-		{
-			if(binds[data.field] != null)
-				binds[data.field].Remove(this);
+		FieldInfo fi = inspectedTypes [0].field;
+		object o = fi.GetValue (c);
+		for (int i = 1; i < inspectedTypes.Count; ++i) {
+			fi = inspectedTypes [i].field;
+			o = fi.GetValue(o);
 		}
-		
+
+		this.onAttributeChange.Invoke (o);
 	}
-	*/
 }
