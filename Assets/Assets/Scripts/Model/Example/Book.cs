@@ -6,6 +6,6 @@ using System.Collections.Generic;
 public class Book : MonoBehaviour {
 
 	public Author author;
-	public string name;
+	public new string name;
 	public List<Page> pages;
 }

@@ -4,11 +4,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using System.Reflection;
+using BitStrap;
 
 [Serializable]
 public class DataBinder {
 	public BindDataUnityEvent onAttributeChange;
 	public List<BindedData> inspectedTypes;
+
+	private GameObject inspectedObject;
 
 	[SerializeField]
 	private string _type;
@@ -30,6 +33,16 @@ public class DataBinder {
 		onAttributeChange = new BindDataUnityEvent ();
 	}
 
+	public void Start()
+	{
+		Singleton<BindNotificator>.Instance.Register (this, rebind);
+	}
+	
+	private void rebind()
+	{
+		RetrieveAttributeFrom (inspectedObject);
+	}
+
 	public void RetrieveAttributeFrom(GameObject obj) {
 		Component c = obj.GetComponent(type);
 		if (c == null)
@@ -41,7 +54,7 @@ public class DataBinder {
 			fi = inspectedTypes [i].field;
 			o = fi.GetValue(o);
 		}
-
+		inspectedObject = obj;
 		this.onAttributeChange.Invoke (o);
 	}
 }

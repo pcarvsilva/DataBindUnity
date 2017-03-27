@@ -46,20 +46,120 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Scripts\Controller\ModelController.cs" />
      <Compile Include="Assets\Assets\Scripts\Model\Attributes\DataClass.cs" />
      <Compile Include="Assets\Assets\Scripts\Model\Attributes\HasManyAttribute.cs" />
      <Compile Include="Assets\Assets\Scripts\Model\Example\Author.cs" />
      <Compile Include="Assets\Assets\Scripts\Model\Example\Book.cs" />
      <Compile Include="Assets\Assets\Scripts\Model\Example\Page.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Binding\BindDataUnityEvent.cs" />
+     <Compile Include="Assets\Assets\Scripts\View\Binding\BindNotificator.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Binding\BindedData.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Binding\DataBinder.cs" />
+     <Compile Include="Assets\Assets\Scripts\View\Binding\DataChangeUnityEvent.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Binding\Functions\AttributeToText.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Elements\Helpers\EventTriggerHelper.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Elements\Helpers\UICreationUnityEvent.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Elements\Window.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Functions\CreateTooltip.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Functions\CreateWindow.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Animation\AnimationParameters\AnimationParametersExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Animation\AnimationParameters\IndirectAnimationParametersExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\AssemblyProcessor\MethodInjectionExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\EditorGraph\MyGraph.cs" />
+     <Compile Include="Assets\BitStrap\Examples\EditorGraph\MyGraphNode.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\ArrayExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\ComponentExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\DictionaryExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\FloatExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\GameObjectExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\HashSetExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\IntExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\ListExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Extensions\StringExtensionsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Graphic\ParticleControllerExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Graphic\TweenShaderExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\ColorHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\EmailHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\Math\BitHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\Math\VectorHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\ReflectionHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Helpers\StringHelperExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Inspector\AttributesExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Inspector\ComponentReference.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Inspector\RuntimeConsoleExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Math\FastRandomExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Math\ModifiableExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Math\NumberBoundsExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Math\SecureIntExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Math\TweenPathExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Physics\Collision2dListener.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Physics\CollisionListener.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Physics\Trigger2dListener.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Physics\TriggerListener.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\CircularBufferExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\CreateExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\DummyBehaviour.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\DummySingleton.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\NestedPrefabExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\SafeActionExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\SingletonExample.cs" />
+     <Compile Include="Assets\BitStrap\Examples\Util\TimerExample.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\AnimationParameter.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\AnimatorFieldAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\BoolAnimationParameter.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\FloatAnimationParameter.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\IntAnimationParameter.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\TriggerAnimationParameter.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\EditorGraphSerializer.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\ArrayExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\ComponentExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\DictionaryExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\FloatExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\GameObjectExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\HashSetExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\IntExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\ListExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Extensions\StringExtensions.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Graphic\ParticleController.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Graphic\TweenShader.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\ColorHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\EmailHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\Math\BitHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\Math\VectorHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\ReflectionHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Helpers\StringHelper.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\ButtonAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\HelpBoxAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\LayerSelectorAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\ReadOnlyAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\TagSelectorAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\Attributes\UnitAttribute.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\BrowserConsoleLogHook.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\MirrorTool.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Inspector\RuntimeConsole.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\FastRandom.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\Modifiable.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\NumberBounds.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\SecureInt.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\TweenPath.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Math\TweenStep.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\Callback.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\CircularBuffer.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\Create.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\NestedPrefab.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\PlayerPrefProperty.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\SafeAction.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\Singleton.cs" />
+     <Compile Include="Assets\BitStrap\Plugins\Util\Timer.cs" />
+     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Example.txt" />
+     <None Include="Assets\BitStrap\Shaders\Scanline.shader" />
+     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Unity.txt" />
+     <None Include="Assets\BitStrap\Shaders\BackgroundBlur.shader" />
+     <None Include="Assets\BitStrap\Docs\Changelog.txt" />
+     <None Include="Assets\BitStrap\Docs\README.txt" />
+     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-BitStrap.txt" />
+     <None Include="Assets\BitStrap\Plugins\NewtonsoftJson\link.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -77,6 +177,9 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Projetos/Unity/DataBindUnity/Assets/BitStrap/Plugins/NewtonsoftJson/Newtonsoft.Json.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,6 +15,7 @@ public class AttributeToText : MonoBehaviour{
 	void Start()
 	{
 		text = GetComponent<Text>();
+		binder.Start ();
 		binder.onAttributeChange.AddListener (OnAttributeChange);
 	}
 
