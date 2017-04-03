@@ -143,29 +143,6 @@ public class DataBinderEditor : PropertyDrawer{
 		binder.type = getPossibleTypesValue()[typeIndex];
 
 		EditorGUI.EndProperty();
-
-		/*
-		EditorGUI.BeginProperty (position, label, property);
-		binder = fieldInfo.GetValue(property.serializedObject.targetObject) as DataBinder;
-		if(_list == null)
-		{
-			OnEnable();
-		}
-		int indentLevel = EditorGUI.indentLevel;
-		int index =0;
-		possibleTypes = getAllPossibleTypes();
-		if(binder.type != null)
-			index = possibleTypes.IndexOf(binder.type.ToString());
-		if(index == -1) 
-			index =0;
-		int typeIndex = EditorGUI.Popup(new Rect (position.x +35, position.y +2, 90, 20),index,possibleTypes.ToArray());
-		binder.type = getPossibleTypesValue()[typeIndex];
-		EditorGUI.indentLevel = 0;
-		_list.DoList(new Rect(position.x,position.y,position.width,position.height - 30 ));
-		EditorGUI.indentLevel = indentLevel;
-
-		EditorGUI.EndProperty();
-		*/
 	}
 
 	private void CleanList() {

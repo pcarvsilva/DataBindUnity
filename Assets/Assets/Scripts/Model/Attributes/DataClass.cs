@@ -7,6 +7,5 @@ public class DataClass : Attribute {
 	
 	public DataClass()
 	{
-
 	}
 }

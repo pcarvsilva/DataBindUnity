@@ -3,9 +3,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
     <ProjectGuid>{1915F14D-49E0-DA4B-9B32-F9BC2A6B546D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -34,158 +33,161 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.XML" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Assets\Scripts\Controller\Editor\ModelControllerEditor.cs" />
-     <Compile Include="Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" />
-     <Compile Include="Assets\BitStrap\Examples\AssemblyProcessor\Editor\MethodInjectionProcessor.cs" />
-     <Compile Include="Assets\BitStrap\Examples\EditorGraph\Editor\MyGraphEditor.cs" />
-     <Compile Include="Assets\BitStrap\Examples\EditorGraph\Editor\MyGraphNodeController.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Extensions\Editor\RectExtensionsExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\AllEditorStylesExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\EditorHelperExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\ProjectBrowserHelperExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\ScriptDefinesHelperExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\StaticReflectionHelperExample.cs" />
-     <Compile Include="Assets\BitStrap\Examples\Helpers\Math\Editor\VectorHelperExampleEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\Editor\AnimationParameterDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Animation\Editor\AnimatorControllerEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyIO.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorManager.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorPreferences.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorTrigger.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\TypeExtensions.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraph.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphController.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphControllerHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphGUI.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphNode.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\SlotDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Extensions\Editor\RectExtensions.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\ParticleControllerDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\TweenShaderEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\TweenShaderPropertyDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\EditorHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\FileSystemHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\ProjectBrowserHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\PropertyDrawerHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\ScriptDefinesHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\SerializedPropertyHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\StaticReflectionHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\BehaviourButtonsEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ButtonAttributeHelper.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ComponentContextMenu.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\EditorCoroutine.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\HelpBoxDecorator.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\Isolate.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\LayerSelectorDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\MaterialContextMenu.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ReadOnlyDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplateCreator.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplatePreference.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplatePreferences.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptableObjectButtonsEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptableObjectCreator.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\TagSelectorDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\TransformEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\UnitDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Math\Editor\ModifiableDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Math\Editor\NumberBoundsDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Math\Editor\SecureIntDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Math\Editor\TweenStepEditor.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Preferences\Editor\BitStrapPreferences.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Util\Editor\EditorPrefProperty.cs" />
-     <Compile Include="Assets\BitStrap\Plugins\Util\Editor\TimerDrawer.cs" />
-     <Compile Include="Assets\BitStrap\Shaders\Editor\BackgroundBlurEditor.cs" />
-     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Example.txt" />
-     <None Include="Assets\BitStrap\Shaders\Scanline.shader" />
-     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Unity.txt" />
-     <None Include="Assets\BitStrap\Shaders\BackgroundBlur.shader" />
-     <None Include="Assets\BitStrap\Docs\Changelog.txt" />
-     <None Include="Assets\BitStrap\Docs\README.txt" />
-     <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-BitStrap.txt" />
-     <None Include="Assets\BitStrap\Plugins\NewtonsoftJson\link.xml" />
- <Reference Include="UnityEditor.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.EditorTestsRunner">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Networking">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.PlaymodeTestsRunner">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TreeEditor">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.HoloLens">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.VR">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VR">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>D:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Projetos/Unity/DataBindUnity/Assets/BitStrap/Plugins/NewtonsoftJson/Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil.Mdb">
- <HintPath>D:/Projetos/Unity/DataBindUnity/Assets/BitStrap/Plugins/AssemblyProcessor/Editor/Cecil/Mono.Cecil.Mdb.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil.Pdb">
- <HintPath>D:/Projetos/Unity/DataBindUnity/Assets/BitStrap/Plugins/AssemblyProcessor/Editor/Cecil/Mono.Cecil.Pdb.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil">
- <HintPath>D:/Projetos/Unity/DataBindUnity/Assets/BitStrap/Plugins/AssemblyProcessor/Editor/Cecil/Mono.Cecil.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Assets\Scripts\Controller\Editor\ModelControllerEditor.cs" />
+    <Compile Include="Assets\Assets\Scripts\View\Binding\Functions\Editor\BindNotificatorEditor.cs" />
+    <Compile Include="Assets\Assets\Scripts\View\Binding\Functions\Editor\DataBinderEditor.cs" />
+    <Compile Include="Assets\BitStrap\Examples\AssemblyProcessor\Editor\MethodInjectionProcessor.cs" />
+    <Compile Include="Assets\BitStrap\Examples\EditorGraph\Editor\MyGraphEditor.cs" />
+    <Compile Include="Assets\BitStrap\Examples\EditorGraph\Editor\MyGraphNodeController.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Extensions\Editor\RectExtensionsExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\AllEditorStylesExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\EditorHelperExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\ProjectBrowserHelperExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\ScriptDefinesHelperExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Editor\StaticReflectionHelperExample.cs" />
+    <Compile Include="Assets\BitStrap\Examples\Helpers\Math\Editor\VectorHelperExampleEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Animation\AnimationParameters\Editor\AnimationParameterDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Animation\Editor\AnimatorControllerEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyIO.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorManager.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorPreferences.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\AssemblyProcessorTrigger.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\AssemblyProcessor\Editor\TypeExtensions.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraph.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphController.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphControllerHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphGUI.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\EditorGraphNode.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\EditorGraph\Editor\SlotDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Extensions\Editor\RectExtensions.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\ParticleControllerDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\TweenShaderEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Graphic\Editor\TweenShaderPropertyDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\EditorHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\FileSystemHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\ProjectBrowserHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\PropertyDrawerHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\ScriptDefinesHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\SerializedPropertyHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Helpers\Editor\StaticReflectionHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\BehaviourButtonsEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ButtonAttributeHelper.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ComponentContextMenu.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\EditorCoroutine.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\HelpBoxDecorator.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\Isolate.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\LayerSelectorDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\MaterialContextMenu.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplateCreator.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplatePreference.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptTemplatePreferences.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptableObjectButtonsEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\ScriptableObjectCreator.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\TagSelectorDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\TransformEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Inspector\Editor\UnitDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Math\Editor\ModifiableDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Math\Editor\NumberBoundsDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Math\Editor\SecureIntDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Math\Editor\TweenStepEditor.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Preferences\Editor\BitStrapPreferences.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Util\Editor\EditorPrefProperty.cs" />
+    <Compile Include="Assets\BitStrap\Plugins\Util\Editor\TimerDrawer.cs" />
+    <Compile Include="Assets\BitStrap\Shaders\Editor\BackgroundBlurEditor.cs" />
+    <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Example.txt" />
+    <None Include="Assets\BitStrap\Shaders\Scanline.shader" />
+    <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-Unity.txt" />
+    <None Include="Assets\BitStrap\Shaders\BackgroundBlur.shader" />
+    <None Include="Assets\BitStrap\Docs\Changelog.txt" />
+    <None Include="Assets\BitStrap\Docs\README.txt" />
+    <None Include="Assets\BitStrap\Examples\Inspector\Editor\C# ScriptTemplate-BitStrap.txt" />
+    <None Include="Assets\BitStrap\Plugins\NewtonsoftJson\link.xml" />
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\Advertisements\Editor\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\EditorTestsRunner\Editor\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\EditorTestsRunner\Editor\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\Networking\Editor\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PlaymodeTestsRunner">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\PlaymodeTestsRunner\Editor\UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\PlaymodeTestsRunner\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\TreeEditor\Editor\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityAnalytics\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityAnalytics\Editor\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityHoloLens\Editor\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityHoloLens\RuntimeEditor\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityVR\Editor\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>D:\Unity\Editor\Data\UnityExtensions\Unity\UnityVR\RuntimeEditor\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>D:\Projetos\Unity\DataBindUnity\Assets\BitStrap\Plugins\AssemblyProcessor\Editor\Cecil\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>D:\Projetos\Unity\DataBindUnity\Assets\BitStrap\Plugins\AssemblyProcessor\Editor\Cecil\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>D:\Projetos\Unity\DataBindUnity\Assets\BitStrap\Plugins\AssemblyProcessor\Editor\Cecil\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Projetos\Unity\DataBindUnity\Assets\BitStrap\Plugins\NewtonsoftJson\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{101E7A80-4EBA-1BB7-81BA-9D7A7A8A704A}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{101E7A80-4EBA-1BB7-81BA-9D7A7A8A704A}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -195,5 +197,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>
