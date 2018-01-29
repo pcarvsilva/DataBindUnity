@@ -31,9 +31,10 @@ public class CreateTooltip : MonoBehaviour {
 	}
 	public void hide(BaseEventData data)
 	{
-		tooltip.SetActive(false);
 		Animator tooltipAnimator = tooltip.GetComponent<Animator>();
-		if(tooltipAnimator)
-			tooltipAnimator.SetTrigger("Hide");
+        if (tooltipAnimator)
+            tooltipAnimator.SetTrigger("Hide");
+        else
+            tooltip.SetActive(false);
 	}
 }
